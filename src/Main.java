@@ -6,10 +6,19 @@ public class Main {
         int refillAmount = 3000;
         if (refillAmount > 1000) {
             System.out.println("Итоговый счёт:");
-            System.out.println(accountStatus + refillAmount + refillAmount/100*1);
+            System.out.println(accountStatus + refillAmount + refillAmount / 100 * 1);
 
             System.out.println("Начислено бонусов:");
-            System.out.println(refillAmount/100*1);
+            System.out.println(refillAmount / 100 * 1);
+
+        } else {
+            System.out.println("Итоговый счёт:");
+            System.out.println(accountStatus + refillAmount);
+
+            System.out.println("Начислено бонусов: 0");
+
+
         }
+
     }
 }
